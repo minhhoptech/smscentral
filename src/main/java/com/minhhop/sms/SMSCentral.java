@@ -29,7 +29,7 @@ public final class SMSCentral implements SMS {
      * Default request to start with.
      */
     private static final Request REQUEST =
-            new ApacheRequest("http://api.smscentral.vn")
+            new ApacheRequest("https://api.smscentral.vn")
                     .header(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON)
                     .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON);
 
