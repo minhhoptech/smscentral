@@ -79,17 +79,17 @@ public final class RtCampaigns implements Campaigns {
     @Override
     @NotNull(message = "Campaign is never NULL")
     public Campaign sendCSKH(String senderId, List<Campaign.Message> messages) throws IOException {
-        return this.send(senderId, 1, messages, null);
+        return this.send(senderId, 0, messages, null);
     }
 
     @Override
     public Campaign sendCSKH(String senderId, List<Campaign.Message> messages, Date schedule) throws IOException {
-        return this.send(senderId, 1, messages, schedule);
+        return this.send(senderId, 0, messages, schedule);
     }
 
     @Override
     public Campaign sendQC(String senderId, List<Campaign.Message> messages, Date schedule) throws IOException {
-        return this.send(senderId, 0, messages, schedule);
+        return this.send(senderId, 1, messages, schedule);
     }
 
     private Campaign send(String senderId, int type, List<Campaign.Message> messages, Date schedule) throws IOException {
