@@ -1,4 +1,4 @@
-<img src="http://dashboard.smscentral.vn/static/images/smscentral1.png" />
+<img src="https://smscentral.vn/assets/upload/sms-potant-1.png" />
 
 ## Object Oriented Wrapper of SMSCentral API
 More details are here: [smscentral.vn](http://smscentral.vn/).
